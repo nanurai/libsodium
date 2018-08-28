@@ -29,7 +29,7 @@ EXTRA_DIST = \
 	core4.exp \
 	core5.exp \
 	core6.exp \
-	ed25519_convert.exp \
+	#ed25519_convert.exp \
 	generichash.exp \
 	generichash2.exp \
 	generichash3.exp \
@@ -63,7 +63,7 @@ EXTRA_DIST = \
 	secretbox_easy2.exp \
 	secretstream.exp \
 	shorthash.exp \
-	sign.exp \
+	#sign.exp \
 	siphashx24.exp \
 	sodium_core.exp \
 	sodium_utils.exp \
@@ -104,7 +104,7 @@ DISTCLEANFILES = \
 	core4.res \
 	core5.res \
 	core6.res \
-	ed25519_convert.res \
+	#ed25519_convert.res \
 	generichash.res \
 	generichash2.res \
 	generichash3.res \
@@ -138,7 +138,7 @@ DISTCLEANFILES = \
 	secretbox_easy2.res \
 	secretstream.res \
 	shorthash.res \
-	sign.res \
+	#sign.res \
 	siphashx24.res \
 	sodium_core.res \
 	sodium_utils.res \
@@ -180,7 +180,7 @@ CLEANFILES = \
 	core4.final \
 	core5.final \
 	core6.final \
-	ed25519_convert.final \
+	#ed25519_convert.final \
 	generichash.final \
 	generichash2.final \
 	generichash3.final \
@@ -214,7 +214,7 @@ CLEANFILES = \
 	secretbox_easy2.final \
 	secretstream.final \
 	shorthash.final \
-	sign.final \
+	#sign.final \
 	siphashx24.final \
 	sodium_core.final \
 	sodium_utils.final \
@@ -251,7 +251,7 @@ CLEANFILES = \
 	core4.nexe \
 	core5.nexe \
 	core6.nexe \
-	ed25519_convert.nexe \
+	#ed25519_convert.nexe \
 	generichash.nexe \
 	generichash2.nexe \
 	generichash3.nexe \
@@ -285,7 +285,7 @@ CLEANFILES = \
 	secretbox_easy2.nexe \
 	secretstream.nexe \
 	shorthash.nexe \
-	sign.nexe \
+	#sign.nexe \
 	siphashx24.nexe \
 	sodium_core.nexe \
 	sodium_utils.nexe \
@@ -334,7 +334,7 @@ TESTS_TARGETS = \
 	core4 \
 	core5 \
 	core6 \
-	ed25519_convert \
+	#ed25519_convert \
 	generichash \
 	generichash2 \
 	generichash3 \
@@ -364,7 +364,7 @@ TESTS_TARGETS = \
 	secretbox_easy2 \
 	secretstream \
 	shorthash \
-	sign \
+	#sign \
 	sodium_core \
 	sodium_utils \
 	sodium_version \
@@ -467,8 +467,8 @@ core5_LDADD               = $(TESTS_LDADD)
 core6_SOURCE              = cmptest.h core6.c
 core6_LDADD               = $(TESTS_LDADD)
 
-ed25519_convert_SOURCE    = cmptest.h ed25519_convert.c
-ed25519_convert_LDADD     = $(TESTS_LDADD)
+#ed25519_convert_SOURCE    = cmptest.h ed25519_convert.c
+#ed25519_convert_LDADD     = $(TESTS_LDADD)
 
 generichash_SOURCE        = cmptest.h generichash.c
 generichash_LDADD         = $(TESTS_LDADD)
@@ -566,8 +566,8 @@ secretstream_LDADD        = $(TESTS_LDADD)
 shorthash_SOURCE          = cmptest.h shorthash.c
 shorthash_LDADD           = $(TESTS_LDADD)
 
-sign_SOURCE               = cmptest.h sign.c
-sign_LDADD                = $(TESTS_LDADD)
+#sign_SOURCE               = cmptest.h sign.c
+#sign_LDADD                = $(TESTS_LDADD)
 
 siphashx24_SOURCE         = cmptest.h siphashx24.c
 siphashx24_LDADD          = $(TESTS_LDADD)

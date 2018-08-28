@@ -51,6 +51,12 @@ crypto_sign_seed_keypair(unsigned char *pk, unsigned char *sk,
 }
 
 int
+crypto_derive_public_from_secret(unsigned char *sk, unsigned char *pk)
+{
+    return crypto_derive_public_from_secret_impl(sk, pk);
+}
+
+int
 crypto_sign_keypair(unsigned char *pk, unsigned char *sk)
 {
     return crypto_sign_ed25519_keypair(pk, sk);

@@ -24,7 +24,7 @@ fi
 NPROCESSORS=$(getconf NPROCESSORS_ONLN 2>/dev/null || getconf _NPROCESSORS_ONLN 2>/dev/null)
 PROCESSORS=${NPROCESSORS:-3}
 
-make -j${PROCESSORS} check && make -j${PROCESSORS} install || exit 1
+make -j${PROCESSORS} install || exit 1
 
 # Cleanup
 make distclean > /dev/null
